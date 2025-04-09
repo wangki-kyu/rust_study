@@ -1,0 +1,20 @@
+[package]
+name = "test_20250409"
+version = "0.1.0"
+edition = "2024"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+hooking_api = { path = "C:/Users/PC/Downloads/hooking_api"}
+
+
+[dependencies.windows]
+version = "*"
+features = [
+    "Win32_Foundation",
+    "Win32_System_SystemServices",
+    "Win32_UI_WindowsAndMessaging",
+    "Win32_System_Diagnostics_Debug",
+]
